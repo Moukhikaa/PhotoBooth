@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="It's a fun, personal project that recreates that classic photobooth vibe: stacked photos, a little text overlay, and an easy way to save your snapshots.">
+        <title>photobooth</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+        <link rel="icon" href="assets/icon.png" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRVQGZXN4W"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-HRVQGZXN4W');
+        </script>
+        <script src="https://kit.fontawesome.com/889828c10b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id="main-header">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html" class="home-nav">home</a></li>
+                    <li><a href="about.html" class="home-nav">about</a></li>
+                    <li><a href="privacy.html" class="home-nav">privacy policy</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-section">
+            <section id="hero">
+                <div id="donationContainer" class="donation-container">
+                    <hr class="donation-line">
+                    <div class="donation-contents">
+                        <div class="pcc">
+                        </div>
+                    </div>
+                </div>
+                <div class="gradientBg"></div>
+                <div class="shimmerOverlay"></div>
+                <div class="particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                </div>
+
+                <div class="heading-container">
+                    <!-- <h1 class="hero-header"><span class="text-span">EST</span>
+                        <span class="hero-animation">
+                            <span>p</span><span>h</span><span>o</span><span>t</span><span>o</span><span>b</span><span>o</span><span>o</span><span>t</span><span>h</span>
+                        </span>
+                        <span class="text-span">2025</span></h1> -->
+                    <h1 class="hero-header"><span class="hero-animation">MEMORY <br /> BOOTH</span></h1>
+                    <p class="small-subtext">Frame the joy, cherish the beauty, <br /> relive the love</p>
+                </div>
+                <div class="button-container">
+                    <button id="home-start" class="main-button">GET GOING
+                        <!-- <i class="fa-solid fa-camera camera-icon"></i> -->
+                    </button>
+                    <button id="donateBtn" class="donate-button">
+                        <img src="https://www.photobooth-io.cc/assets/camera-icon.png" class="heart-size" alt="heart icon">
+                        <!-- <i class="fa-regular fa-heart"></i> -->
+                    </button>
+                </div>
+                <p class="credits">made by <a href="https://github.com/Moukhikaa" target="_blank" class="credits-link">Moukhika ♡</a></p>
+                <p class="new-credits">© 2025 Moukhika. All Rights Reserved.</p>
+            </section>
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html>

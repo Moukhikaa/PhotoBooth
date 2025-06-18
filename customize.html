@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="It's a fun, personal project that recreates that classic photobooth vibe: stacked photos, a little text overlay, and an easy way to save your snapshots.">
+        <title>photobooth | customize</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+        <link rel="icon" href="assets/icon.png" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRVQGZXN4W"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-HRVQGZXN4W');
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="header-logo">
+                <p class="side-logo"><a href="index.html" class="home-tag">Photobooth</a></p>
+            </div>
+        </header>
+        <main>
+            <section class="custom-main">
+                <div id="photoPreview"></div>
+                <div class="customization-container">
+                    <h1 class="custom-heading">customize your photo</h1>
+                    <div>
+                        <div class="custom-options-container">
+                            <h3 class="options-label">frame:</h3>
+                            <div class="custom-buttons-container">
+                                <button id="pinkBtnFrame" class="buttonFrames"></button>
+                                <button id="blueBtnFrame" class="buttonFrames"></button>
+                                <button id="yellowBtnFrame" class="buttonFrames"></button>
+                                <button id="matchaBtnFrame" class="buttonFrames"></button>
+                                <button id="purpleBtnFrame" class="buttonFrames"></button>
+                                <button id="brownBtnFrame" class="buttonFrames"></button>
+                                <button id="redBtnFrame" class="buttonFrames"></button>
+                                <!-- <button id="ribbonBtnFrame" class="buttonFrames"></button> -->
+                                <button id="whiteBtnFrame" class="buttonFrames"></button>
+                                <button id="blackBtnFrame" class="buttonFrames"></button>
+                            </div>
+                            <div class="date-overlay">
+                                <input type="checkbox" id="dateCheckbox">
+                                <label for="dateCheckbox" id="addDateLabel">add date</label>
+                            </div>
+                            <!-- <div class="">
+
+                            </div> -->
+                            <div class="custom-buttons-holder">
+                                <button class="sub-button customBtn" id="customBack">RETAKE</button>
+                                <button class="main-button customBtn" id="customNext">NEXT</button>
+                            </div>
+                            <!--<div class="bg-custom">
+                                <input type="file" name="" id="bgUpload">
+                                <label for="bgUpload">upload your own bg</label>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="gradientBg"></div>
+                <div class="shimmerOverlay"></div>
+            </section>
+        </main>
+        <script src="customize.js"></script>
+        <script src="canvas.js"></script>
+        <!-- <script src="download.js"></script> -->
+    </body>
+</html>

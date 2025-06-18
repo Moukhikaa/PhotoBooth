@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>photobooth | picture</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+        <link rel="icon" href="assets/icon.png" />
+        <style>
+            body { 
+                /* text-align: center;  */
+                font-family: Arial, sans-serif; 
+                /* margin: 0;  */
+                padding: 20px; 
+            }
+            
+            #videoContainer { 
+                position: relative; 
+                display: inline-block; 
+            }
+            
+            video { 
+                width: 100%; 
+                max-width: 1000px; 
+                border: 2px solid black; 
+                border-radius: 20px;
+                display: block; 
+            }
+            
+            /* Black screen before video loads */
+            #blackScreen {
+                position: absolute;
+                top: 0; left: 0;
+                width: 100%; height: 100%;
+                background: black;
+                border-radius: 20px;
+                display: flex; align-items: center; justify-content: center;
+                color: white; font-size: 18px;
+                transition: opacity 1s ease-in-out;
+            }
+
+            /* Countdown Text */
+            #countdownText {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 50px;
+                font-weight: bold;
+                color: white;
+                background: rgba(0, 0, 0, 0.6);
+                padding: 20px;
+                border-radius: 10px;
+                display: none;
+            }
+
+            #flash { 
+                position: fixed; 
+                top: 0; 
+                left: 0; 
+                width: 100%; 
+                height: 100vh; 
+                background: white; 
+                opacity: 0; 
+                transition: opacity 0.2s; 
+                pointer-events: none;
+            }
+
+            #photoContainer { 
+                display: flex; 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 10px; 
+                margin-top: 10px; 
+                width: 170px;
+                /* transform: scaleX(-1); */
+            }
+
+            #progressCounter {
+                font-size: 2.2rem;
+            }
+
+            .camera-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .photo { 
+                width: 150px; 
+                max-width: 200px; 
+                border: 2px solid black; 
+                display: block; 
+            }
+
+            button { 
+                padding: 10px 20px; 
+                margin-top: 10px; 
+                font-size: 16px; 
+                cursor: pointer; 
+            }
+
+            #downloadBtn { 
+                display: none; 
+            }
+
+            /* video {
+                transform: scaleX(-1);
+            } */
+
+            .credits-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                bottom: -150px;
+                
+            }
+        </style>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRVQGZXN4W"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-HRVQGZXN4W');
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="canvas-logo">
+                <p class="side-logo"><a href="index.html" class="home-tag">Photobooth</a></p>
+            </div>
+        </header>
+        <div class="canvas-centered">
+            <!-- <div class="gradientBgCanvas"></div> -->
+            <p id="progressCounter">0/3</p>
+            <section class="camera-container">
+                <div id="videoContainer">
+                    <video id="video" autoplay></video>
+                    <div id="blackScreen">Waiting for camera access...</div>
+                    <div id="countdownText">3</div>
+                </div>
+                <div id="photoContainer"></div>
+            </section>
+            <div class="gradientBg"></div>
+            <div class="startBtn-container">
+                <div class="filter-container">
+                    <button id="bnwFilterId" class="filterBtn"></button>
+                    <button id="sepiaFilterId" class="filterBtn"></button>
+                    <button id="normalFilterId" class="filterBtn"></button>
+                </div>
+                <button id="invertBtn">>|<</button>
+                <button id="startBtn">START</button>
+                <button id="doneBtn">DONE</button>
+            </div>
+            <div id="flash"></div>
+        </div>
+        <script src="canvas.js"></script>
+    </body>
+</html>

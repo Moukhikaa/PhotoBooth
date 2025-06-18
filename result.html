@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>photobooth | download</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+        <link rel="icon" href="assets/icon.png" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRVQGZXN4W"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-HRVQGZXN4W');
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="header-logo">
+                <p class="side-logo"><a href="index.html" class="home-tag">Photobooth</a></p>
+            </div>
+        </header>
+        <main>
+            <section class="result-container">
+                <h1 class="hero-header result-header">Your Photos Are Ready!</h1>
+                <div class="result-contents">
+                    <aside>
+                        <img src="assets/photobooth-pic.png" alt="" id="results-img">
+                    </aside>
+                    <div class="right-result-contents">
+                        <p class="big-subtext">
+                            Your three snapshots are captured—no retakes, <br />
+                            just real, fun memories. <br />
+                            Now, it's time to save and share your moments.
+                        </p>
+                        <p class="big-subtext">
+                            Click the button below to <span class="pink-text">download</span> your photos
+                        </p>
+                        <div class="buttons-holder">
+                            <button class="sub-button" id="homeBtn">HOME</button>
+                            <button class="main-button" id="downloadBtn">DOWNLOAD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gradientBg"></div>
+                <div class="shimmerOverlay"></div>
+            </section>
+        </main>
+        <script src="canvas.js"></script>
+        <script src="download.js"></script>
+        
+    </body>
+</html>
