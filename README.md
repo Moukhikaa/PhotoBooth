@@ -2,7 +2,7 @@
 
 Welcome to **Memory Booth**, a modern and interactive photo booth experience right in your browser! Designed with fun, speed, and customization in mind — this app lets users capture moments in a unique 3-snap sequence, apply filters, and download memories in just seconds.
 
-Live Demo: [Memory Booth](#https://photo-booth-drab.vercel.app/) 
+Live Demo:  [Memory Booth](#https://photo-booth-drab.vercel.app/) 
 
 ---
 
