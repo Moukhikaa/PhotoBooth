@@ -38,7 +38,6 @@ This app **does not collect or store any user data**. All images are processed i
 ## ✨ Credits
 
 Created with 💜 by [Moukhika](https://github.com/Moukhikaa)  
-UI inspired by minimal photo editing tools and retro polaroid experiences.
 
 ---
 
