@@ -37,7 +37,7 @@ This app **does not collect or store any user data**. All images are processed i
 
 ## ✨ Credits
 
-Created with 💜 by [Moukhika](https://github.com/Moukhikaa)  
+Created with 💜 by [Moukhika](https://www.linkedin.com/in/moukhika01/)
 
 ---
 
